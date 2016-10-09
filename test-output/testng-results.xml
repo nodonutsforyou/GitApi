@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PegaFiExpressSmokeTest" duration-ms="11827" started-at="2016-10-09T17:23:14Z" finished-at="2016-10-09T17:23:25Z">
+    <groups>
+    </groups>
+    <test name="smoke" duration-ms="11827" started-at="2016-10-09T17:23:14Z" finished-at="2016-10-09T17:23:25Z">
+      <class name="Delete">
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:Delete@61544ae6]" name="init" is-config="true" duration-ms="4" started-at="2016-10-09T20:23:25Z" finished-at="2016-10-09T20:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="smoke()[pri:0, instance:Delete@61544ae6]" name="smoke" duration-ms="805" started-at="2016-10-09T20:23:25Z" finished-at="2016-10-09T20:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smoke -->
+      </class> <!-- Delete -->
+      <class name="CreateFactory$PosivePostCreateRqTest">
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="6" started-at="2016-10-09T20:23:18Z" finished-at="2016-10-09T20:23:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@265adfad]" name="test" duration-ms="1018" started-at="2016-10-09T20:23:18Z" finished-at="2016-10-09T20:23:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="9" started-at="2016-10-09T20:23:19Z" finished-at="2016-10-09T20:23:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@35432107]" name="test" duration-ms="1155" started-at="2016-10-09T20:23:19Z" finished-at="2016-10-09T20:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="6" started-at="2016-10-09T20:23:20Z" finished-at="2016-10-09T20:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@3adcc812]" name="test" duration-ms="1332" started-at="2016-10-09T20:23:20Z" finished-at="2016-10-09T20:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="8" started-at="2016-10-09T20:23:21Z" finished-at="2016-10-09T20:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@7a1a14a4]" name="test" duration-ms="1057" started-at="2016-10-09T20:23:21Z" finished-at="2016-10-09T20:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="9" started-at="2016-10-09T20:23:22Z" finished-at="2016-10-09T20:23:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@7b420819]" name="test" duration-ms="959" started-at="2016-10-09T20:23:22Z" finished-at="2016-10-09T20:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="init" is-config="true" duration-ms="8" started-at="2016-10-09T20:23:23Z" finished-at="2016-10-09T20:23:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$PosivePostCreateRqTest@a3d9978]" name="test" duration-ms="1161" started-at="2016-10-09T20:23:23Z" finished-at="2016-10-09T20:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- CreateFactory$PosivePostCreateRqTest -->
+      <class name="CreateFactory$NegativePostCreateRqTest">
+        <test-method status="PASS" signature="init(org.testng.ITestContext, java.lang.String)[pri:0, instance:CreateFactory$NegativePostCreateRqTest@512baff6]" name="init" is-config="true" duration-ms="234" started-at="2016-10-09T20:23:14Z" finished-at="2016-10-09T20:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13330ac6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.github.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:CreateFactory$NegativePostCreateRqTest@512baff6]" name="test" duration-ms="4046" started-at="2016-10-09T20:23:14Z" finished-at="2016-10-09T20:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:CreateFactory$NegativePostCreateRqTest@512baff6]" name="afterSuite" is-config="true" duration-ms="962" started-at="2016-10-09T20:23:25Z" finished-at="2016-10-09T20:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- CreateFactory$NegativePostCreateRqTest -->
+    </test> <!-- smoke -->
+  </suite> <!-- PegaFiExpressSmokeTest -->
+</testng-results>

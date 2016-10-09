@@ -1,0 +1,42 @@
+<testData>
+    <login></login>
+    <username></username>
+    <password></password>
+    <createSet>
+        <positive>
+            <createRqSet name="min" description="empty" homepage="null" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="FALSE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="null" licenseTemplate="null"/>
+            <createRqSet name="min" description="empty" homepage="large" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="FALSE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="empty" licenseTemplate="null"/>
+            <createRqSet name="min" description="middle" homepage="empty" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="TRUE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="empty" licenseTemplate="empty"/>
+            <createRqSet name="min" description="middle" homepage="middle" hasIssues="FALSE" hasWiki="TRUE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="var2" licenseTemplate="empty"/>
+            <createRqSet name="min" description="large" homepage="middle" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="TRUE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="var1" licenseTemplate="var1"/>
+            <createRqSet name="min" description="null" homepage="empty" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="var1" licenseTemplate="empty"/>
+            <createRqSet name="min" description="null" homepage="middle" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="FALSE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="null" licenseTemplate="null"/>
+            <createRqSet name="min" description="null" homepage="large" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="FALSE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="var2" licenseTemplate="var1"/>
+            <createRqSet name="middle" description="empty" homepage="empty" hasIssues="FALSE" hasWiki="TRUE" hasDownloads="TRUE" teamId="FALSE" autoInit="TRUE" gitignoreTemplate="null" licenseTemplate="var1"/>
+            <createRqSet name="middle" description="empty" homepage="empty" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="FALSE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="var2" licenseTemplate="empty"/>
+            <createRqSet name="middle" description="empty" homepage="middle" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="FALSE" teamId="FALSE" autoInit="TRUE" gitignoreTemplate="var1" licenseTemplate="empty"/>
+            <createRqSet name="middle" description="middle" homepage="null" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="empty" licenseTemplate="null"/>
+            <createRqSet name="middle" description="middle" homepage="large" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="TRUE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="var2" licenseTemplate="null"/>
+            <createRqSet name="middle" description="large" homepage="null" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="TRUE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="null" licenseTemplate="var1"/>
+            <createRqSet name="middle" description="null" homepage="null" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="TRUE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="var2" licenseTemplate="empty"/>
+            <createRqSet name="middle" description="null" homepage="empty" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="FALSE" teamId="FALSE" autoInit="TRUE" gitignoreTemplate="empty" licenseTemplate="null"/>
+            <createRqSet name="large" description="empty" homepage="null" hasIssues="FALSE" hasWiki="TRUE" hasDownloads="FALSE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="var1" licenseTemplate="empty"/>
+            <createRqSet name="large" description="middle" homepage="null" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="FALSE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="var1" licenseTemplate="var1"/>
+            <createRqSet name="large" description="middle" homepage="large" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="TRUE" teamId="FALSE" autoInit="TRUE" gitignoreTemplate="null" licenseTemplate="empty"/>
+            <createRqSet name="large" description="large" homepage="empty" hasIssues="FALSE" hasWiki="TRUE" hasDownloads="FALSE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="var2" licenseTemplate="null"/>
+            <createRqSet name="large" description="large" homepage="middle" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="FALSE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="null" licenseTemplate="empty"/>
+            <createRqSet name="large" description="large" homepage="large" hasIssues="FALSE" hasWiki="TRUE" hasDownloads="FALSE" teamId="FALSE" autoInit="TRUE" gitignoreTemplate="empty" licenseTemplate="var1"/>
+            <createRqSet name="large" description="large" homepage="large" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="var1" licenseTemplate="null"/>
+            <createRqSet name="large" description="null" homepage="middle" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="empty" licenseTemplate="var1"/>
+        </positive>
+        <negative>
+            <!--<createRqSet expectedErrorCode="422" name="null"/>-->
+            <!--<createRqSet expectedErrorCode="422" name="empty"/>-->
+            <!--<createRqSet expectedErrorCode="422" name="too large"/>-->
+            <createRqSet expectedErrorCode="422" description="too large text"/>
+            <!--<createRqSet expectedErrorCode="422" homepage="too large"/>-->
+            <!--<createRqSet expectedErrorCode="422" gitignoreTemplate="not present"/>-->
+            <!--<createRqSet expectedErrorCode="422" licenseTemplate="not present"/>-->
+        </negative>
+    </createSet>
+</testData>
