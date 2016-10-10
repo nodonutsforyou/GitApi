@@ -8,6 +8,7 @@ import lombok.Data;
 import utility.Rnd;
 
 /**
+ * Class to hold description of test case for xml configuration
  * Created by MVostrikov on 07.10.2016.
  */
 @Data
@@ -64,10 +65,13 @@ public class CreateRqSet {
 
     public boolean positive;
 
+    /**
+     * convert this object to object, which can be translated to JSON
+     */
     public CreateRq convert() {
         CreateRq ret = new CreateRq();
 
-        if (name == null) {
+        if (name == null) {//name is not null by default
             ret.setName(Rnd.generateString(10));
         } else {
             switch (name.toLowerCase()) {

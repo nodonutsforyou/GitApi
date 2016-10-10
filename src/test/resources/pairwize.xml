@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
+<!--big test for all variants-->
 <suite name="PegaFiExpressSmokeTest" parallel="tests">
     <listeners>
         <listener class-name="org.testng.reporters.XMLReporter"/>
@@ -9,8 +10,8 @@
 
     <test name="smoke" preserve-order="true">
         <classes>
-            <class name="CreateFactory"/>
-            <class name="Delete"/>
+            <class name="testCases.CreateFactory"/>
+            <class name="testCases.Delete"/>
         </classes>
     </test>
 

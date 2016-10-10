@@ -6,6 +6,8 @@ import org.apache.http.HttpResponse;
 import utility.Rnd;
 
 /**
+ * object to store created data of new repository.
+ * we can check created repository if we want to
  * Created by MVostrikov on 07.10.2016.
  */
 @Data

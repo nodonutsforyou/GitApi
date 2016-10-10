@@ -1,3 +1,5 @@
+package testCases;
+
 import com.google.gson.Gson;
 import config.TestData;
 import git.Repo;
@@ -23,6 +25,7 @@ import java.nio.charset.Charset;
 import java.util.*;
 
 /**
+ * Basic test to parent all other tests
  * Created by MVostrikov on 07.10.2016.
  */
 public class BasicTest {
@@ -36,6 +39,11 @@ public class BasicTest {
     protected ITestContext testContext;
     UsernamePasswordCredentials credentials;
 
+    /**
+     * Initialization form TestNG
+     * @param testContext provided by TestNG
+     * @param url provided by maven
+     */
     @Parameters({"url"})
     @BeforeClass(alwaysRun = true)
     public void init(final ITestContext testContext, String url) {
@@ -47,17 +55,26 @@ public class BasicTest {
 
         testData = TestData.getTestdata(url, testContext.getName());
 
-        credentials = new UsernamePasswordCredentials(testData.getLogin(), testData.getPassword());
+        credentials = new UsernamePasswordCredentials(testData.getLogin(), testData.getPassword()); //encrypted header for auth
     }
 
+    /**
+     * runs after suite is ended
+     */
     @AfterSuite
     public void afterSuite() {
         cleanAll();
     }
 
+    /**
+     * sends objects as Json in Post message
+     */
     public HttpResponse sendPostJson(String url, Object obj) throws Exception {
         return sendPostJson(url, new StringEntity(gson.toJson(obj)));
     }
+    /**
+     * sends StringEntity in Post message
+     */
     public HttpResponse sendPostJson(String url, StringEntity message) throws Exception {
         HttpPost rq = new HttpPost(this.url + url);
         rq.addHeader(new BasicScheme().authenticate(credentials, rq, null));
@@ -67,7 +84,9 @@ public class BasicTest {
 
         return rs;
     }
-
+    /**
+     * sends empty Delete message
+     */
     public HttpResponse sendDelete(String url) throws Exception {
         HttpDelete rq = new HttpDelete(this.url + url);
         rq.addHeader(new BasicScheme().authenticate(credentials, rq, null));
@@ -77,11 +96,17 @@ public class BasicTest {
         return rs;
     }
 
+    /**
+     * deletes repository
+     */
     public HttpResponse deleteRq(Repo repo)throws Exception {
         HttpResponse rs = sendDelete("/repos/"+testData.getUsername()+"/"+repo.getName());
         return rs;
     }
 
+    /**
+     * deletes all created repositories
+     */
     public void cleanAll()  {
         while(testData.getCreatedRepos().size()>0) {
             Repo repo = testData.getCreatedRepos().poll();
@@ -93,7 +118,9 @@ public class BasicTest {
         }
     }
 
-
+    /**
+     * parses reply to string
+     */
     public String parseReply(HttpResponse rs) throws Exception {
         HttpEntity httpEntiny = rs.getEntity();
         String body;

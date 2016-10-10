@@ -1,9 +1,15 @@
 <testData>
+    <!--login - usually email-->
     <login></login>
+    <!--username-->
     <username></username>
+    <!--password-->
+    <!--!!!IMPORTANT!!! not secured. write down your own password at your own risk-->
     <password></password>
+    <!--!!!IMPORTANT!!! not secured. write down your own password at your own risk-->
     <createSet>
         <positive>
+            <!--pairwize variants of all posible outcomes of different fields-->
             <createRqSet name="min" description="empty" homepage="null" hasIssues="FALSE" hasWiki="FALSE" hasDownloads="FALSE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="null" licenseTemplate="null"/>
             <createRqSet name="min" description="empty" homepage="large" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="FALSE" teamId="TRUE" autoInit="FALSE" gitignoreTemplate="empty" licenseTemplate="null"/>
             <createRqSet name="min" description="middle" homepage="empty" hasIssues="TRUE" hasWiki="TRUE" hasDownloads="TRUE" teamId="TRUE" autoInit="TRUE" gitignoreTemplate="empty" licenseTemplate="empty"/>
@@ -30,12 +36,20 @@
             <createRqSet name="large" description="null" homepage="middle" hasIssues="TRUE" hasWiki="FALSE" hasDownloads="TRUE" teamId="FALSE" autoInit="FALSE" gitignoreTemplate="empty" licenseTemplate="var1"/>
         </positive>
         <negative>
-            <!--<createRqSet expectedErrorCode="422" name="null"/>-->
-            <!--<createRqSet expectedErrorCode="422" name="empty"/>-->
-            <!--<createRqSet expectedErrorCode="422" name="too large"/>-->
+            <!--Negative tests-->
+            <!--null name-->
+            <createRqSet expectedErrorCode="422" name="null"/>
+            <!--empty name-->
+            <createRqSet expectedErrorCode="422" name="empty"/>
+            <!--too large name-->
+            <createRqSet expectedErrorCode="422" name="too large"/>
+            <!--too large description-->
             <createRqSet expectedErrorCode="422" description="too large text"/>
-            <!--<createRqSet expectedErrorCode="422" homepage="too large"/>-->
+            <!--too large homepage-->
+            <createRqSet expectedErrorCode="422" homepage="too large"/>
+            <!--TODO not present gitignoreTemplate - surprisingly doesn't return error-->
             <!--<createRqSet expectedErrorCode="422" gitignoreTemplate="not present"/>-->
+            <!--TODO not present licenseTemplate - surprisingly doesn't return error-->
             <!--<createRqSet expectedErrorCode="422" licenseTemplate="not present"/>-->
         </negative>
     </createSet>

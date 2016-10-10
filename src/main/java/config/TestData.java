@@ -32,11 +32,15 @@ public class TestData {
 
     protected static final Logger logger = LoggerFactory.getLogger(TestData.class);
 
+    //multitone (singletone with multiple instanses) holder
     static Map<String, TestData> testDataList;
 
     @Getter
     protected String testName;
 
+    /**
+     * cut host form url
+     */
     private static String getHostFormUrl(String url) {
         try {
             URL urlUrl = new URL(url);
@@ -46,6 +50,9 @@ public class TestData {
         return "";
     }
 
+    /**
+     * multitone getter
+     */
     public static TestData getTestdata(String host, String testName) {
         host = getHostFormUrl(host);
         URL url;
@@ -65,14 +72,14 @@ public class TestData {
                         url = Thread.currentThread().getContextClassLoader().getResource(DEFAULTFILENAME + ".xml");
                         f = Paths.get(url.toURI()).toFile();
                     } catch (URISyntaxException er) {
-                        logger.error("Не найден файл конфигурации", er);
+                        logger.error("configuration file don't found", er);
                     }
                 }
                 TestData newTestData = parseXml(f);
                 newTestData.testName = testName;
                 testDataList.put(testName, newTestData);
             } catch (FileNotFoundException e) {
-                logger.error("Не найден файл конфигурации", e);
+                logger.error("configuration file don't found", e);
             }
         }
         return testDataList.get(testName);
@@ -138,8 +145,13 @@ public class TestData {
         return ret;
     }
 
+    /**
+     * holder of created entities
+     */
     private static Queue<Repo> createdRepos;
-
+    /**
+     * get holder of created entities
+     */
     public Queue<Repo> getCreatedRepos() {
         if(createdRepos==null) createdRepos = new ArrayDeque<>();
         return createdRepos;

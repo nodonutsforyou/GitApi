@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * utility class to create random objects
  * Created by MVostrikov on 07.10.2016.
  */
 public class Rnd {
